@@ -7,7 +7,3 @@ appVersion: "1.0"
 home: https://github.com/anupbarve/hack14
 sources:
   - https://github.com/anupbarve/hack14 
-dependencies:
-  - name: rook-cassandra-operator
-    version: "1.0"
-    repository: "https://anupbarve.github.io/hack14"
