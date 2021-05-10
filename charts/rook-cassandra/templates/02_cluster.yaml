@@ -76,10 +76,10 @@ spec:
   annotations:
   #  key: value
   datacenter:
-    name: us-east-1
+    name: {{ .Values.datacenter.name }}
     racks:
-      - name: us-east-1a
-        members: {{ .Values.members }}
+      - name: {{ .Values.datacenter.racks.name }}
+        members: {{ .Values.datacenter.racks.members }}
         storage:
           volumeClaimTemplates:
                 - metadata:
@@ -87,11 +87,11 @@ spec:
                   spec:
                     resources:
                       requests:
-                        storage: {{ .Values.storage }}
+                        storage: {{ .Values.datacenter.racks.storage }}
         resources:
           requests:
-            cpu: 1
-            memory: 2Gi
+            cpu: {{ .Values.datacenter.racks.requests.cpu }}
+            memory: {{ .Values.datacenter.racks.requests.memory }}
           limits:
-            cpu: 1
-            memory: 2Gi
+            cpu: {{ .Values.datacenter.racks.limits.cpu }}
+            memory: {{ .Values.datacenter.racks.limits.memory }}

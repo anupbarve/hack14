@@ -1,2 +1,12 @@
-members: 2
-storage: 3Gi
+datacenter: 
+  name: pf9
+  racks: 
+    limits: 
+      cpu: 1
+      memory: 2Gi
+    members: 2
+    name: pune
+    requests: 
+      cpu: 1
+      memory: 2Gi
+    storage: 3Gi
