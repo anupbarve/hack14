@@ -79,7 +79,7 @@ spec:
     name: us-east-1
     racks:
       - name: us-east-1a
-        members: 3
+        members: {{ .Values.members }}
         storage:
           volumeClaimTemplates:
                 - metadata:
@@ -87,7 +87,7 @@ spec:
                   spec:
                     resources:
                       requests:
-                        storage: 5Gi
+                        storage: {{ .Values.storage }}
         resources:
           requests:
             cpu: 1
