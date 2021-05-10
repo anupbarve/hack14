@@ -1,0 +1,6 @@
+dependencies:
+- name: rook-cassandra-operator
+  repository: https://anupbarve.github.io/hack14
+  version: "1"
+digest: sha256:97c6120f142d138cdae27e63e86789dd2a9202bfd58260fc4378512ab2b307c5
+generated: "2021-05-10T09:41:00.091274433Z"

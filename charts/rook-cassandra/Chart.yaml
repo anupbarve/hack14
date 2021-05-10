@@ -10,4 +10,4 @@ sources:
 dependencies:
   - name: rook-cassandra-operator
     version: "1.0"
-    repository: "https://github.com/anupbarve/hack14"
+    repository: "https://anupbarve.github.io/hack14"
